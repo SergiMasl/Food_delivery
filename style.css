@@ -18,7 +18,7 @@ body {
 }
 
 .logo-img {
-  width: 128px;
+  width: 58px;
 }
 
 .shopping-card {
@@ -159,7 +159,19 @@ body {
 }
 
 .slid-summer {
-  background-image: url("img/summer.png");
+  background-image: url("img/header-promo/summer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slid-vitoms {
+  background-image: url("img/header-promo/vitoms.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slid-autum {
+  background-image: url("img/header-promo/autum.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -449,7 +461,7 @@ body {
 /* ///// */
 
 .logo-footer {
-  width: 205px;
+  width: 58px;
 }
 
 .footer {
@@ -482,4 +494,120 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+.swiper {
+  position: relative;
+}
+
+.slider-btns {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.slider-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .slide {
+    padding: 70px;
+  }
+
+  .dev-card {
+    max-width: calc(50% - 30px);
+  }
+
+  .logo-footer {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search-form {
+    width: 560px;
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 560px;
+  }
+
+  .promo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .slide {
+    padding: 13px;
+  }
+
+  .slide-title {
+    font-size: 32px;
+    line-height: 29px;
+  }
+
+  .sleder-text {
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
+
+  .dev-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dev-card {
+    max-width: 100%;
+    
+  }
+
+  .tabs-card {
+    max-width: 100%;
+  }
 }
